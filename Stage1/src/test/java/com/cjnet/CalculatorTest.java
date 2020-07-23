@@ -3,6 +3,7 @@ package com.cjnet;
 import io.appium.java_client.MobileElement;
 import io.appium.java_client.android.AndroidDriver;
 import org.openqa.selenium.remote.DesiredCapabilities;
+import org.testng.Assert;
 import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
@@ -47,13 +48,14 @@ public class CalculatorTest {
 				.findElementsByXPath("//android.widget.RelativeLayout[@resource-id='com.sec.android.app.popupcalculator.Calculator']//android.widget.LinearLayout//android.widget.Button");
 
 		androidDriver.findElementById("com.sec.android.app.popupcalculator:id/bt_01").click();
-		System.out.println("Click on : 1");
+		androidDriver.findElementById("com.sec.android.app.popupcalculator:id/bt_01").click();
+		System.out.println("Click on : 11");
         Thread.sleep(1000);
 		androidDriver.findElementById("com.sec.android.app.popupcalculator:id/bt_add").click();
 		System.out.println("Click on : add");
         Thread.sleep(1000);
 		androidDriver.findElementById("com.sec.android.app.popupcalculator:id/bt_02").click();
-		System.out.println("Click on : 233");
+		System.out.println("Click on : 2");
         Thread.sleep(1000);
 		androidDriver.findElementById("com.sec.android.app.popupcalculator:id/bt_equal").click();
 		System.out.println("Click on : Equal");
@@ -83,8 +85,9 @@ public class CalculatorTest {
 
 		System.out.println("Result : " + output);
 
-		assert output.equals("3") : "Wrong Calculation, Actual Output : " + output + "Expected : 3";
-
+		assert output.equals("13") : "Wrong Calculation, Actual Output : " + output + "Expected : 13";
+		
+		
 	}
 
 	/* @Test(priority = 2)
