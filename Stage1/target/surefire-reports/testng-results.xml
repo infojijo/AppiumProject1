@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2020-07-23T00:15:39 CDT" name="com.cjnet.CalculatorTest" finished-at="2020-07-23T00:15:56 CDT" duration-ms="17072">
+    <groups>
+    </groups>
+    <test started-at="2020-07-23T00:15:39 CDT" name="Command line test" finished-at="2020-07-23T00:15:56 CDT" duration-ms="17072">
+      <class name="com.cjnet.CalculatorTest">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.cjnet.CalculatorTest@59e5ddf]" started-at="2020-07-23T00:15:39 CDT" name="setUp" finished-at="2020-07-23T00:15:48 CDT" duration-ms="9680" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="addition()[pri:1, instance:com.cjnet.CalculatorTest@59e5ddf]" started-at="2020-07-23T00:15:48 CDT" name="addition" finished-at="2020-07-23T00:15:55 CDT" duration-ms="6743" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- addition -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.cjnet.CalculatorTest@59e5ddf]" started-at="2020-07-23T00:15:55 CDT" name="tearDown" finished-at="2020-07-23T00:15:56 CDT" duration-ms="603" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.cjnet.CalculatorTest -->
+    </test> <!-- Command line test -->
+  </suite> <!-- com.cjnet.CalculatorTest -->
+</testng-results>
